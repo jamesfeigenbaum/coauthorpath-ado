@@ -19,27 +19,27 @@ program define coauthorpath, nclass
 
 	if `"`path'"' == "" local path = "path"
 
-    local dir : pwd
-	*di "`dir'"
+    	local user = c(username)
+    	*di "`user'"
 
 	local x = ""
 
-	if (regexm("`dir'", "`1'") == 1) {
+	if (regexm("`user'", "`1'") == 1) {
 		local x = "`2'"
 	}
-	else if (regexm("`dir'", "`3'") == 1) {
+	else if (regexm("`user'", "`3'") == 1) {
 		local x = "`4'"
 	}
-	else if (regexm("`dir'", "`5'") == 1) {
+	else if (regexm("`user'", "`5'") == 1) {
 		local x = "`6'"
 	}
-	else if (regexm("`dir'", "`7'") == 1) {
+	else if (regexm("`user'", "`7'") == 1) {
 		local x = "`8'"
 	}
-	else if (regexm("`dir'", "`9'") == 1) {
+	else if (regexm("`user'", "`9'") == 1) {
 		local x = "`10'"
 	}
-	else if (regexm("`dir'", "`11'") == 1) {
+	else if (regexm("`user'", "`11'") == 1) {
 		local x = "`12'"
 	}
 
