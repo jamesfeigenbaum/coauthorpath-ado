@@ -4,9 +4,11 @@ Working with coauthors on Stata do-files is hard enough without having do deal w
 
 From:
 
-`global $path = "C:/Users/author1/project"`
-`*global $path = "C:/Users/author2/project"`
-`*global $path = "~/author3/project"`
+```
+global $path = "C:/Users/author1/project"
+*global $path = "C:/Users/author2/project"
+*global $path = "~/author3/project"
+```
 
 (and having to change the *'s every time you run for coauthor's code)
 
