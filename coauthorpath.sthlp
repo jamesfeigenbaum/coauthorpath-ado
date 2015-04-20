@@ -38,7 +38,10 @@ Working with coauthors on do-files is hard enough without having do deal with di
 
 {title:Examples}
 
-{phang}{cmd:. coauthorpath author1 "C:/Users/author1/project" author2 "~/author2/project", path(projectpath)} {p_end}
+{pstd}
+Suppose username on your computer is karlmarx and the project drive is "C:/Users/karlmarx/manifesto". Suppose the username on your coauthor's computer is engels and the path to the project folder is "C:/Users/engels/comm_manifesto". Then the following {cmd:coauthorpath} line would set up the do file for easy sharing:
+
+{phang}{cmd:. coauthorpath karlmarx "C:/Users/karlmax/manifesto" engels "C:/Users/engels/comm_manifesto", path(projectpath)} {p_end}
 {phang}{cmd:. di "$projectpath"} {p_end}
 
 {title:Author}
