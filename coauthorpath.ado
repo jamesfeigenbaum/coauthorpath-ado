@@ -1,9 +1,9 @@
 
-*! version 0.1  19apr2015 James J Feigenbaum
+*! version 0.2  16jun2015 James J Feigenbaum
 
 /*******************************************************************************
 James J Feigenbaum
-April 19, 2015
+June 16, 2015
 jfeigenb@fas.harvard.edu
 james.feigenbaum@gmail.com
 
@@ -19,7 +19,7 @@ program define coauthorpath, nclass
 
 	if `"`path'"' == "" local path = "path"
 
-    	local user = c(username)
+    	local user = c(hostname)
     	*di "`user'"
 
 	local x = ""
